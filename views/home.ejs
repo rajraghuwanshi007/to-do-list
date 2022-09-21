@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+  <div class="box" id="heading">
+    <h1> Lists </h1>
+  </div>
+
+  <div class="box">
+
+    <a href="/today" class="raj"><b>Today</b></a>
+
+
+  <%  found.forEach(function(item){ %>
+
+    <form action="/delete-list" method="post">
+      <div class="item">
+        <input type="checkbox" name="checkbox" value="<%=item._id%>" onChange="this.form.submit()">
+        <a href="/list/<%=item.name%>"><b><%=item.name%></b></a>
+
+      </div>
+    </form>
+  <%  }) %>
+
+  <form class="item" action="/add-list" method="post">
+    <input type="text" name="newItem" placeholder="New List" autocomplete="off">
+    <button type="submit" name="list">+</button>
+  </form>
+     
+  </div>
+
+<%- include("footer") -%>

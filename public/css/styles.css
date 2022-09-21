@@ -43,12 +43,13 @@ input[type="checkbox"] {
   margin: 20px;
 }
 
-p {
+p, a {
   margin: 0;
   padding: 20px;
   font-size: 20px;
   font-weight: 200;
   color: #00204a;
+  text-decoration: none;
 }
 
 form.item {
@@ -93,4 +94,13 @@ footer {
   color: white;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
+}
+.raj {
+  text-align: center;
+  margin-left: 40px;
+  min-height: 70px;
+  text-align: center     !important;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
 }

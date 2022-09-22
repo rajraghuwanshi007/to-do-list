@@ -1,0 +1,2 @@
+It is a to-do-list app, which on home routes shows all your to-do lists and u can add more lists via the add button on the page and can simply navigate to your list by just clicking the list name and delete the list using the checkbox. And on the list you can add and delete items by via the add button and checkbox respectively.
+It uses Mongodb as a database hence saves your lists even if you restart or shut your server or port.
